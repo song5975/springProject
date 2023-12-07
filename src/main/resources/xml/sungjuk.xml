@@ -4,6 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 		
 	
+	<!-- class: 빈으로 사용될 클래스의 전체 경로를 지정합니다. -->
 	<bean id="vo" class="com.spring.sExam.exam1207.SungjukVO">
 		<property name="name" value="홍길동"/>
 		<property name="kor" value="100"/>

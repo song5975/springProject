@@ -30,11 +30,14 @@
             </form>
         </div>
         <hr/>
-        <div>
+        <div>  코드 열어서 주석 확인<br/>
             <%-- <c:if test="${!empty name && !empty age}"> --%>
             	넘어온 값 : 
                 ${vo.name} / ${vo.age} / ${vo.mid} / ${vo.pwd} / ${vo.gender} / ${vo.address} / ${vo.job} / ${vo.WDate}
-                <!-- 두 번째 글짜가 대문자면 첫 번째 글자도 대문자로 해야한다. ${vo.wDate} -->
+                <%-- 두 번째 글짜가 대문자면 첫 번째 글자도 대문자로 해야한다. ${vo.wDate} --%>
+                <%-- JSTL에서는 Java 빈의 속성(property)을 참조할 때 첫 글자가 소문자인 경우에는 자동으로 첫 글자를 대문자로 바꿔주는 규칙이 적용 --%>
+                
+                <%-- age -> getAge(); 일 때 필드명은 age, wDate -> getWDate(); 일 때 필드명은 WDate (그래서 vo 에서 값을 가져올 때는 ${vo.WDate} --%>
             <%-- </c:if> --%>
         </div>
         <hr/>

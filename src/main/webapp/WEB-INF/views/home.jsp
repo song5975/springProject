@@ -56,12 +56,12 @@
     <p>
         <a href="${ctp}/btom/b1" class="btn btn-success">b1호출</a> |
         <a href="${ctp}/btom/b2" class="btn btn-success">b2호출</a> |
-        <a href="${ctp}/btom/b3" class="btn btn-success">b3호출</a> |
+        <a href="${ctp}/btom/b3" class="btn btn-danger">b3호출</a> |
         <a href="${ctp}/btom/b4" class="btn btn-success">b4호출</a> |
         <a href="${ctp}/btom/b5" class="btn btn-success">b5호출</a> |
         <a href="${ctp}/btom/b6" class="btn btn-success">b6호출</a> |
-        <a href="${ctp}/btom/b7" class="btn btn-success">b7호출</a> |
-        <a href="${ctp}/btom/b8" class="btn btn-success">b8호출</a> |
+        <a href="${ctp}/btom/b7" class="btn btn-danger">b7호출</a> |
+        <a href="${ctp}/btom/b8" class="btn btn-danger">b8호출</a> |
     </p>
     <hr/>
     <p>

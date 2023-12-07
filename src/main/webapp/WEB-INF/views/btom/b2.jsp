@@ -23,6 +23,8 @@
         <hr/>
         <div>
             <!-- <form name="myform" method="post" action="b2Ok"> -->
+            <%-- <form method="post" action="${ctp}/btom/b2"> --%>
+            <!-- action 속성이 생략된 경우, 폼이 속한 현재 페이지의 URL로 데이터가 전송됩니다. 만약 현재 페이지가 "/b2"인 경우, 이 폼의 데이터는 "/b2"로 전송됩니다. -->
             <form method="post">
                 <div>성명 : <input type="text" name="name" id="name" value="${name}" class="form-control"/></div>
                 <div>나이 : <input type="number" name="age" id="age" value="${age}" min="0" max="99" class="form-control mb-2"/></div>

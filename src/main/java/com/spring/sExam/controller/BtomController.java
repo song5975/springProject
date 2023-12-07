@@ -43,6 +43,7 @@ public class BtomController {
         return "btom/b2";
     }
 
+    /*
     @RequestMapping(value = "/b2Ok", method = RequestMethod.POST)
     public String b2OkGet(String name,
     		@RequestParam(name="age", defaultValue = "0", required = false) int age, 
@@ -53,6 +54,7 @@ public class BtomController {
 
         return "btom/b2";
     }
+     */
     
     @RequestMapping(value = "/b2", method = RequestMethod.POST)
     public String b2Post(Model model, HttpServletRequest request) throws UnsupportedEncodingException {
@@ -67,6 +69,7 @@ public class BtomController {
         
         return "btom/b2";
     }
+
     
     @RequestMapping(value = "/b3", method = RequestMethod.GET)
     public String b3Get() {
@@ -98,6 +101,7 @@ public class BtomController {
 	/* @RequestMapping(value = "/b4Path/{name}", method = RequestMethod.GET) */
     /* @RequestMapping(value = "/b4Path/{name}/{age}/test", method = RequestMethod.GET) */
     @RequestMapping(value = "/b4Path/{name}-{age}/test", method = RequestMethod.GET)
+    // 컨트롤러에 {} 안에 변수명을 담고, .jsp에서는 값을 넘겨서 값을 받을 수 있다. 이 컨트롤러의 경로는 /b4Path/test 인 것이다.
     public String b4PathGet(Model model,
     		@PathVariable String name,
     		@PathVariable String age
@@ -122,7 +126,7 @@ public class BtomController {
     		@RequestParam(name="pwd") String pwd,
     		@RequestParam(name="gender") String gender,
     		@RequestParam(name="address") String address
-    		
+			/* @RequestParam 어노테이션을 사용할 때 자동으로 타입 변환과 기본값 처리를 지원 */
     		) {
     	
     	model.addAttribute("name", name);

@@ -16,18 +16,21 @@
 	<hr/>
 	<div><img src="/include/1.jpg" width="150px" /> (X) </div>
 	<div><img src="/resources/2.jpg" width="150px" /> (X) </div>
+	<!-- 정확한 경로를 적어줘야한다. ${ctp} -->
 	<div><img src="${ctp}/resources/2.jpg" width="150px" /> (O) </div>
 	<div><img src="${ctp}/resources/images/3.jpg" width="150px" /> (O) </div>
 	<div><img src="${ctp}/resources/images/temp/4.jpg" width="150px" /> (O) </div>
+	
+	
 	<!-- servlet-context와 함께 확인(<resources mapping="/images/**" location="/resources/images/" />) -->
 	<div><img src="${ctp}/images/5.jpg" width="150px" /> (O) </div>
-	
 	<div><img src="${ctp}/board/1.jpg" width="150px" /> (O) </div>
 	<div><img src="${ctp}/board/2.jpg" width="150px" /> (O) </div>
-	
 	<div><img src="${ctp}/pds/4.jpg" width="150px" /> (O) </div>
 	<div><img src="${ctp}/pds/5.jpg" width="150px" /> (O) </div>
-	<!-- images에 mapping이 걸린 것. images/** * 2개는 모두 다 본다. 따라서 pds의 파일도 스캔을 하는 것 -->
+	
+	
+	<!-- images에 mapping이 걸린 것. images/** 의 * 2개는 아래 파일을 모두 다 본다. 따라서 ${ctp}/resources/images/pds/5.jpg 가 되는 것 -->
 	<div><img src="${ctp}/images/pds/5.jpg" width="150px" /> (O) </div>
     <hr/>
     <p>

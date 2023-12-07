@@ -21,5 +21,4 @@ public class BTomVO {
 	
 	private String job;
 	private String wDate;
-	
 }
