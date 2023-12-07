@@ -29,6 +29,10 @@
 	<div><img src="${ctp}/pds/5.jpg" width="150px" /> (O) </div>
 	<!-- images에 mapping이 걸린 것. images/** * 2개는 모두 다 본다. 따라서 pds의 파일도 스캔을 하는 것 -->
 	<div><img src="${ctp}/images/pds/5.jpg" width="150px" /> (O) </div>
+    <hr/>
+    <p>
+        <a href="${ctp}/" class="btn btn-success">home</a> |
+    </p>
 </div>
 <p><br/></p>
 </body>
